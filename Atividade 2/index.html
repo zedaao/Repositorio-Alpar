@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delicia </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+
+    <style>
+
+        html{
+            border-top: 30px solid #916a70;
+            border-bottom: black;
+        }
+        body{
+            background-color: #e6ddde;
+            font-family: 'Times New Roman', Times, sans-serif;
+            
+        }
+
+        a, ul, li,ol,p,h1,h2,h3,span,div,footer{
+            text-decoration: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #443235;
+        }
+
+        .footer{
+            padding: 15px;
+            
+        }
+
+       
+        h1,h2 {
+            font-family: "Unna", serif;
+        }
+        span{
+            color: #988c77;
+            line-height: 35px;
+        }
+
+        div h3 p {
+            text-align: start;
+        }
+        
+        p{
+            color:  #916a70 ;
+        }
+
+        li {
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            
+        }   
+
+        main{
+            display: flex;
+             justify-content: space-between;
+            
+        }
+
+        img{
+            display: block;
+            width: 100%;
+            
+        }
+
+        
+
+        .introducao{
+            font-size: 54px;
+            text-align: center;
+        }
+
+        .container{
+            max-width: 1300px;
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            margin-top: 120px;
+        }
+        
+        .flex{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .title{
+            font-size: 124px;
+            font-style: italic;
+            font-weight: 700;
+            margin: 80px;
+            text-align: center;
+        }
+
+        .space{
+            text-align: center;
+            background-color:white;
+            padding: 20px;
+            border-radius: 3px;
+        }
+
+        .space h3, p{
+            text-align: start;
+        }
+
+
+        .detalhe{
+            grid-column: -1/ 1;
+        border-radius: 3px;
+        height: 3px;
+        margin-right: 20px;
+        background-color: #443235;
+        }
+
+        .bg-black{
+            background-color: black;
+        }
+
+        .footer p {
+            color: white;
+        }
+
+        .lista a{
+            color: #988c77;
+            font-weight: bold;
+        }
+        
+        .lista a:hover{
+            color: white;
+        }
+    </style>
+</head>
+
+<body >
+    <section class="container">
+        <h1 class="title">Café Delicia</h1>
+        <p class="introducao">Venha conhecer o Cardápio do Café Delícia.</p>
+    </section>
+
+    <main class="container" >
+        <div class="grid ">
+            <div>
+                <h2>Menu</h2>
+                <div class="detalhe"></div>
+            </div>
+
+        <div class="space">
+            <ol>
+
+                <li>
+                <div>
+                    <h3>Vanilla Diceys</h3>
+                    <p>Café Delicia</p>
+                </div>
+                <span>R$1,70</span>
+                </li>
+
+                <li >
+                <div>
+                    <h3>Blueberry Latte</h3>
+                    <p>Café Delicia</p>
+                </div>
+                <span>R$ 4,50</span>
+                </li>
+
+                <li>
+                    <div>
+                        <h3>Ghostbusters Brown</h3>
+                        <p>Café Delicia</p>
+                    </div>
+                    <span>R$ 3,25</span>
+                </li>
+
+                <li>
+                    <div>
+                        <h3>Strawberry</h3>
+                        <p>Café Delicia</p>
+                    </div>
+                    <span>R$ 4,50</span>
+                </li>
+
+                <li>
+                    <div>
+                        <h3>Wild Bill</h3>
+                        <p>Café Delicia</p>
+                    </div>
+                    <span>R$ 3,25</span>
+                </li>
+            </ol>
+        </div>
+
+        </div>
+    </main>
+
+    <section >
+        <div class="container grid">
+            <div class="">
+                <table border="1">
+                    <tr>
+                        <th >Dias</th>
+                        <td>Seg. à Sab.</td>
+                        <td rowspan="3"> :p </td>
+                    </tr>
+                    <tr>
+                        <th >Horario</th>
+                        <td>das 06:30h às 18:00h</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" 
+                        >Rua Dos Cafezeiros</th>
+                    </tr>
+                </table>
+
+            </div>
+            <div>
+                <img src="./img/nathan-dumlao-71u2fOofI-U-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black footer">
+       
+       <ul class="flex lista">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">(11) 9512-1324</a></li>
+    </ul>
+    <div class="flex">
+        <p>Café Delicia © 2024.</p>
+        
+       </div>
+    </footer>
+</body>
+</html>
