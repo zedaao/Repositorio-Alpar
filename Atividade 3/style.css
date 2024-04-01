@@ -1,0 +1,96 @@
+
+
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./img/moça.png) no-repeat;
+    background-position: 20% 160%;
+ }
+a, h1, p, div, label, button, input,section, body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+header{
+    background-color: black;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+h1{
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+input{
+    border: 1px solid #939393;
+    border-radius: 3px;
+    height: 37px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+a{
+    margin: 15px;
+    color: #293E40;
+}
+
+button{
+    background-color: #293E40;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px;
+    width: 370px;
+    height: 45px;
+    margin-bottom: 25px;
+}
+
+button:hover{
+    background-color: #214E50;
+}
+
+
+.box-login{
+    max-width: 400px;
+   margin: 0 auto;
+    margin-top: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.box-1{
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 8px;
+    
+}
+
+.box-2{
+    border: 1px solid #ddd;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.detalhe{
+grid-column: -1/ 1;
+border-radius: 3px;
+height: 1px;
+background-color: #ddd;
+}
