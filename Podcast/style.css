@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: url(./img/Rectangle\ 1.jpg) ;
+    background-size: cover;
+    width: 100%;
+    font-family: "Inknut Antiqua", serif;
+}
+
+header{
+    background: rgba(0000, 000, 000, 0.3);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+   
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    color: #fff;
+    font-size: 22px;
+}
+
+iframe{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    
+}
+
+h2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.container2{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex ul{
+    display: flex;
+    
+   
+}
+
+
+
+.flex li {
+    margin-right: 40px;
+    
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.flex li:hover{
+    border-bottom: 3px solid #fff;
+}
+
+.video-painel{
+    width: 1300px;
+    height: 800px;
+    background-color: #000;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    opacity: 0.9;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.video-painel p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+
+
+.video{
+ display: flex;
+ justify-content: center;
+
+}
+
+.painel-audio {
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.painel-audio li{
+    margin-bottom: 40px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #777;
+}
+
+.painel-audio h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer{
+    border-top: 4px solid #FF00B3;
+    margin-top: 100px;
+    background-color: #000;
+    text-align: center;
+    padding: 50px;
+}
