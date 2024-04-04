@@ -70,21 +70,25 @@ h2{
 .flex ul{
     display: flex;
     
-   
 }
 
 
 
 .flex li {
-    margin-right: 40px;
     
+    display: block;
+    padding: 10px;
     align-items: center;
     font-weight: 500;
     cursor: pointer;
+    
+}
+
+.flex p {
     border-bottom: 3px solid transparent;
 }
 
-.flex li:hover{
+.flex p:hover{
     border-bottom: 3px solid #fff;
 }
 
