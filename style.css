@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
+
+
+body{
+    background: url(./img/alpar-site-bg3.png);
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    
+    
+}
+
+img{
+    width: 100%;
+    display: block
+}
+
+h1{
+    font-size: 92px;
+}
+.content{
+    max-width: 1550px;
+    margin: 0 auto;
+    padding-top: 90px;
+    
+}
+
+.content p {
+    font-size: 32px;
+    opacity: 0.8;
+}
+
+.header{
+    max-width: 1550px;
+    padding: 34px 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header ul{
+    display: flex;
+   
+    display: inline-flex;
+    gap: 35px;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+
+.header a {
+    opacity: 0.7;
+    font-size: 18px;
+    line-height: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.header a::after{
+    content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+  border-radius: 5px;
+}
+
+
+.header a:hover{
+    opacity: 1;
+}
+
+.header a:hover::after{
+    
+    width: 100%;
+    
+}
+
+.logo{
+    width: 130px;
+    height: 36px;
+}
+
+.content{
+    margin: 0 auto;
+    
+}

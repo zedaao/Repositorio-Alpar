@@ -69,28 +69,28 @@ h2{
 
 .flex ul{
     display: flex;
-    
 }
 
 
 
 .flex li {
-    
     display: block;
     padding: 10px;
     align-items: center;
     font-weight: 500;
     cursor: pointer;
-    
 }
+
 
 .flex p {
     border-bottom: 3px solid transparent;
 }
 
+
 .flex p:hover{
     border-bottom: 3px solid #fff;
 }
+
 
 .video-painel{
     width: 1300px;
@@ -147,3 +147,4 @@ h2{
     text-align: center;
     padding: 50px;
 }
+
