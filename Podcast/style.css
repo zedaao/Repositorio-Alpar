@@ -98,16 +98,13 @@ h2{
     background-color: #000;
     margin-top: 60px;
     margin-bottom: 60px;
-    
+
     margin: 0 auto;
     display: block;
     border-radius: 5px;
     overflow-y: scroll;
 }
 
-.video-painel div{
-    opacity: 0.8;
-}
 
 .video-painel p{
     color: #fff;
