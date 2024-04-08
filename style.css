@@ -125,7 +125,8 @@ h1{
 
 .footer li {
     display: flex;
-    gap: 20px;
+
+    gap: 19px;
     justify-content: center;
     align-items: center;
 }
