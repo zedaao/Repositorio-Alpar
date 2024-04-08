@@ -1,0 +1,494 @@
+
+body{
+  
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+
+h1 {
+    font-family: "Unna", serif;
+}
+span{
+    color: #988c77;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+
+
+section.container {
+    background: url(./img/coffe.jpg)  ;
+    background-size: cover;
+    
+}
+ 
+table, th, td {
+    border: 1px solid #916a70;
+  }
+
+  table {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  tr{
+    background-color: #443235;
+    color: #fff;
+  }
+
+  td{
+    width: 100px;
+    height: 100px;
+    color: #916a70;
+    background-color: #fff;
+  }
+
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.logo{
+    font-family: "Unna", serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    display: inline-block;
+    cursor: pointer;
+    color: #000;
+} 
+
+.info-bg{
+    background-color: #916a70;
+    padding: 1rem;
+}
+
+.info {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+  }
+
+  .info p, a {
+    color: #fff;
+    font-size: 18px;
+    
+  }
+
+.bg-header{
+    background-color: #fff;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0px 20px;
+}
+
+.header ul{
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    color: #443235;
+    display: block;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.header a::after{
+    content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #443235;
+  margin-top: 2px;
+  transition: 0.3s;
+  position: absolute;
+  border-radius: 5px;
+}
+
+
+.header a:hover::after{
+    width: 100%;
+}
+
+
+
+.introduction{    
+    height: 50vh;
+   
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.introduction h1{
+    font-size: 124px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 150px;
+    color: #fff;
+}
+
+.btn-introduction{
+    min-width: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    color: #443235;
+    font-size: 14px;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-introduction:hover{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.coffe {
+    max-width: 600px;
+    height: 350px;
+
+}
+
+.cafe-list{
+    padding: 50px;
+   
+}
+
+.cafe-list ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cafe-list img {
+border-radius: 15px;
+transition:  0.3s;
+display: block;
+cursor: pointer;
+}
+
+.cafe-list img:hover {
+    transform: scale(1.1);
+}
+
+.cardapio-list{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cardapio-list h2{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #916a70;
+}
+
+.coffe-icon{
+    width: 125px;
+    width: 125px;
+    border-radius: 15px;
+}
+
+.grid-icon{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+    padding: 25px;
+   
+}
+
+.grid-icon img{
+    margin-right: 15px;
+}
+
+.grid-icon span {
+    margin-left: 10px;
+}
+
+.grid-icon h3 {
+    color: #988c77;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.grid-icon p {
+    color: #988c77;
+}
+
+
+.btn-cardapio{
+    margin-top: 30px;
+    min-width: 100px;
+    background-color: #916a70;
+    padding: 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+ 
+}
+
+
+.btn-cardapio:hover{
+    border: 2px solid #916a70;
+    background-color: transparent;
+    color: #916a70;
+}
+
+.button {
+ display: flex;
+ align-items: center;
+ justify-content: center
+ ;
+}
+
+.local-coffe{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.coffe-card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 50px;
+}
+
+
+
+.coffe-box h2{
+    font-size: 40px;
+   text-align: center;
+    margin-bottom: 50px;
+    color: #916a70;
+}
+
+.coffe-box p {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.coffe-shops{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    padding: 0px 20px;
+}
+
+.bg{
+    background-size: fit;
+    width: 35%;
+    height: 500px;
+}
+
+.bg-01{
+    background: url(./img/coffe-shop.jpg);
+   
+}
+
+
+.bg-03{
+    background: url(./img/coffe-shop3.jpg);
+    
+}
+
+.bg-04{
+    background: url(./img/coffe-shop4.jpg);
+   
+}
+
+
+.footer{
+    background-color: #000;
+    padding: 60px;
+    margin-top: 100px;
+}
+
+.footer ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer a, p {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.footer a:hover{
+    color: #916a70;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#btn-header{
+    display: none;
+}
+
+@media (max-width: 1300px){
+    .coffe-card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .coffe-card h2{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 800px){
+
+    .introduction h1{
+        font-size: 60px;
+    }
+    .introduction{
+        margin: 0 auto;
+        width: 20vh;
+    }
+    .info{
+        display: block;   
+    }
+
+    .info p,a {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .cafe-list ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cafe-list img{
+        border-radius: 0;
+    }
+    .grid-icon p{
+        font-size: 14px;
+    }
+    .grid-icon h3{
+        font-size: 18px;
+    }
+    .cardapio-list h2 {
+        font-size: 30px;
+    }
+    
+    .logo{
+       margin: 0 auto;
+       font-size: 40px;
+    }
+
+ 
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 200px;
+        right: 0px;
+        background: #fff;
+        height: 0px;
+        z-index: 1000;
+        transition: 0.6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        }
+
+    #nav.ativo #menu {
+        height: 220px;
+        visibility: visible;
+       
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+    #btn-header{
+        display: flex;
+        pad: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        
+    }
+
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid ;
+        display: block;
+    }
+
+    #hamburguer::before, #hamburguer::after{
+        content:'';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        
+        transition: 0.3s;
+        position: relative;
+        
+    }
+
+    #nav.ativo #hamburguer {
+        border-top-color: transparent;
+    }
+
+    
+    #nav.ativo #hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.ativo #hamburguer::after{
+        transform:  rotate(-135deg);
+        top: -7px;
+    }
+}
