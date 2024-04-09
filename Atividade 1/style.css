@@ -87,7 +87,7 @@ li{
 .title-name{
     border-right: 4px solid #000;
     display: block;
-    overflow-y: x;
+    
     
 }
 
@@ -100,8 +100,9 @@ li{
 
 .paragrafo{
     font-size: 16px;
-    width: 400px;
+    max-width: 400px;
     margin-top: 20px;
+    padding: 0px;
 }
 
 .contato{
@@ -130,4 +131,61 @@ li{
    justify-content: center;
    padding-bottom: 100px;
    padding-bottom: 50px;
+}
+
+
+@media(max-width: 1500px){
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .paragrafo{
+        width: 300px;
+    }
+    
+}
+
+
+@media(max-width: 1000px){
+    .grid{
+        
+        grid-template-columns: 1fr;
+    }
+    .grid-area{
+        grid-template-columns: 1fr;
+    }
+    .foto{
+        margin: 0px auto;
+    }
+    .paragrafo {
+        padding: 20px;
+        font-size: 15px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+   
+    h1{
+        writing-mode: horizontal-tb;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    h2{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    li{
+        text-align: center;
+        font-size: 13px;
+    }
 }

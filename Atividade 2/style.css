@@ -158,7 +158,7 @@ img{
 }
 
 .btn-introduction{
-    min-width: 100px;
+    min-width: 50px;
     background-color: #fff;
     padding: 20px;
     border-radius: 50px;
@@ -400,34 +400,82 @@ cursor: pointer;
 
 
 @media (max-width: 600px){
+
+
+    .introduction{
+        height: 40vh;
+        padding-top: 0px;
+    }
+    .introduction h1{
+        padding-top: 80px;
+        font-size: 30px;
+    }
+
+    .btn-introduction{
+        
+        font-size: 10px;
+        width: 100px;
+    }
+
+    
+    .coffe-box h2{
+        font-size: 30px;
+    }
+
+    .coffe-box p {
+        width: 300px;
+        font-size: 16px;
+    }
+
     .cafe-list ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    
+
     .cafe-list img{
         border-radius: 0;
     }
+
+    .grid-icon{
+        display: block;
+    }
+
     .grid-icon p{
         font-size: 14px;
     }
     .grid-icon h3{
+        margin-top: 20px;
         font-size: 18px;
     }
+
+    .grid-icon span{
+        
+        margin: 30px 0px;
+    };
+
     .cardapio-list h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .logo{
        margin: 0 auto;
-       font-size: 40px;
+       font-size: 25px;
     }
 
+    table {
+        width: 250px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    
  
     #menu{
         display: block;
         position: absolute;
         width: 100%;
-        top: 200px;
+        top: 190px;
         right: 0px;
         background: #fff;
         height: 0px;
