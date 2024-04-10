@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShinyDex</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        
+        <img src="" alt="shiny-pokemon" class="img_pokemon">
+        <h2 class="pokemon_names">
+            <span class="pokemon_name"></span>
+            Nº
+            <span class="pokemon_number"></span>
+        </h2>
+
+        <div class="pokemon_types">
+            <h2>Type</h2>
+
+            <div class="data_types">
+                <p class="pokemon_type1"></p>
+                <p class="pokemon_type2"></p>
+            </div>
+        </div>
+
+        <div class="pokemon_heights">
+            <h2>Altura</h2>
+            <p class="pokemon_height"></p>
+        </div>
+
+        <div class="pokemon_weights">
+            <h2>Peso</h2>
+            <p class="pokemon_weight"></p>
+        </div>
+
+        <form class="form_pokemon">
+            <input type="search"
+            class="input_search"
+            placeholder="Nome ou Numero"
+            required
+            >
+        </form>
+        <div class="button_nav">
+            <button class="btn btn-prev">&lsaquo;</button>
+            <button class="btn btn-next">&rsaquo;</button>
+        </div>
+        <img src="./img/pokeDex.png" class="img_pokedex" alt="">
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

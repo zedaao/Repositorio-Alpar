@@ -1,0 +1,137 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    text-align: center;
+    font-family: "Oxanium", sans-serif;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,107,1) 47%, rgba(0,212,255,1) 100%);
+}
+
+main{
+    display: inline-block;
+    margin-top: 5%;
+    position: relative;
+}
+
+
+
+.img_pokedex{
+    width: 100%;
+    max-width: 550px;
+   
+   }
+
+
+.img_pokemon{
+    position: absolute;
+    left: 57%;
+    bottom: 65%;
+    max-height: 20%;
+    transform: translate(-35%, 0%)
+}
+
+
+.pokemon_names{
+    position: absolute;
+    font-weight: 500;
+    color: #616161;
+    top: 62%;
+    left: 43%;
+    font-size: clamp(18px, 5vw,1rem) ;
+    display: flex;
+    gap: 10px;
+}
+
+
+.pokemon_name{
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.form_pokemon{
+    background-color: #333;
+    position: absolute;
+    width: 37%;
+    top: 48%;
+    right: 20%;
+}
+
+.pokemon_types{
+    position: absolute;
+    left: 43%;
+    top: 69%;
+    color: #000;
+    font-size: clamp(10px, 1vw, 0.5rem) ;
+    text-align: start;
+}
+
+.data_types{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+   
+}
+
+.data_types p {
+    padding: 2% 5%;
+    border-radius: 11%;
+}
+
+.pokemon_heights{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    font-size: clamp(12px, 0.5vw,1rem) ;
+}
+
+.pokemon_heights span{
+    display: flex;
+    gap: 5px;
+}
+
+.pokemon_weights{
+    position: absolute;
+    top: 80%;
+    left: 63%;
+    font-size: clamp(12px, 0.5vw,1rem) ;
+}
+
+.input_search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    font-weight: 600;
+    font-size: clamp(12px, 1vw,1rem) ;
+    
+}
+
+.button_nav{
+    position: absolute;
+    bottom: 23.5%;
+    left: 21%;
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    width: 50%;
+    padding: 10% 50%;
+    font-size: clamp(10, 4vw,0.4rem) ;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5%;
+    box-shadow: -1px 2px 0 #444;
+    
+}
