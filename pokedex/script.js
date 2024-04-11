@@ -46,6 +46,14 @@ function showPokemon(pokemon) {
     return item.type.name;
   });
 
+  const pokemonStats = pokemon.stats.map((item) => {
+    const states = {
+      name: item.stat.name,
+      state: item.base_stat,
+    };
+    return states;
+  });
+
   pokemonListDom.innerHTML += `
   <div class='pokemon_cards'>
     <h1 class="pokemon_name">${name}</h1>
@@ -55,32 +63,23 @@ function showPokemon(pokemon) {
 
     <span class="pokemon_id">N°${pokemonNumber}</span>
 
+    <div class='types'>
     ${types
       .map(
         (item) =>
-          `<span class="pokemon_type" style="color:${colors[item]}"  >${item}</span>`
+          `<span class="pokemon_type" style="background-color:${colors[item]}"  >${item}</span>`
       )
       .join("")}
+    </div>
+
+    
                 
     <ul>
-      <li><p>${pokemon.stats[0].stat.name}</p> <span>${
-    pokemon.stats[0].base_stat
-  }</span></li>
-      <li><p>${pokemon.stats[1].stat.name}</p> <span>${
-    pokemon.stats[1].base_stat
-  }</span></li>
-      <li><p>${pokemon.stats[2].stat.name}</p> <span>${
-    pokemon.stats[2].base_stat
-  }</span></li>
-      <li><p>${pokemon.stats[3].stat.name}</p> <span>${
-    pokemon.stats[3].base_stat
-  }</span></li>
-      <li><p>${pokemon.stats[4].stat.name}</p> <span>${
-    pokemon.stats[4].base_stat
-  }</span></li>
-      <li><p>${pokemon.stats[5].stat.name}</p> <span>${
-    pokemon.stats[5].base_stat
-  }</span></li>
+      ${pokemonStats
+        .map(
+          (item) => `<li><p>${item.name}</p> <span>${item.state}</span></li>`
+        )
+        .join("")}
     </ul>
   </div>
 `;
