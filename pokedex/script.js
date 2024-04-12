@@ -2,6 +2,7 @@ const pokemonListDom = document.querySelector(".div");
 let carregando = false;
 let offset = 0;
 let count = 0;
+let max = 50;
 const colors = {
   fire: "#ee6b2f",
   grass: "#008000",
@@ -13,13 +14,14 @@ const colors = {
   poison: "#7b62a3",
   bug: "#f8d5a3",
   dragon: "#97b3e6",
-  psychic: "#eaeda1",
+  psychic: "#7b62a3",
   flying: "#4592c4",
   fighting: "#d56723",
   normal: "#a4acaf",
   ice: "#51c4e7",
   ghost: "#7b62a3",
   steel: "#9eb7b8",
+  dark: "#444",
 };
 
 fetch(`https://pokeapi.co/api/v2/pokemon?limit=20.`)
@@ -96,10 +98,9 @@ window.addEventListener("scroll", () => {
   const percent = current / max;
 
   if (offset > count) {
-    return;
   }
 
-  if (percent > 0.7 && carregando === false) {
+  if (percent > 0.7 && carregando === false && count) {
     carregando = true;
     console.log(percent);
     fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=` + offset)
