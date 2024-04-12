@@ -101,6 +101,7 @@ window.addEventListener("scroll", () => {
 
   if (percent > 0.7 && carregando === false) {
     carregando = true;
+    console.log(percent);
     fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=` + offset)
       .then((response) => response.json())
       .then(loadPoekemons)
