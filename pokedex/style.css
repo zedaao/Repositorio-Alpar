@@ -89,6 +89,7 @@ h1{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
+    border: 2px solid ;
 }
 
 .pokemon_cards li {

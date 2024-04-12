@@ -1,3 +1,7 @@
+const pokemonListDom = document.querySelector(".div");
+let carregando = false;
+let offset = 0;
+let count = 0;
 const colors = {
   fire: "#ee6b2f",
   grass: "#008000",
@@ -30,10 +34,13 @@ async function loadPoekemons(response) {
     const pokemon = await pokeResponse.json();
     showPokemon(pokemon);
   }
+
+  offset += response.results.length;
+  carregando = false;
+  count = response.count;
 }
 
 function showPokemon(pokemon) {
-  const pokemonListDom = document.querySelector(".div");
   const name = pokemon.name;
 
   const pokemonSprit =
@@ -72,8 +79,6 @@ function showPokemon(pokemon) {
       .join("")}
     </div>
 
-    
-                
     <ul>
       ${pokemonStats
         .map(
@@ -84,3 +89,21 @@ function showPokemon(pokemon) {
   </div>
 `;
 }
+
+window.addEventListener("scroll", () => {
+  const max = document.body.scrollHeight - window.innerHeight;
+  const current = window.scrollY;
+  const percent = current / max;
+
+  if (offset > count) {
+    return;
+  }
+
+  if (percent > 0.7 && carregando === false) {
+    carregando = true;
+    fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=` + offset)
+      .then((response) => response.json())
+      .then(loadPoekemons)
+      .catch((erro) => console.log(erro));
+  }
+});
