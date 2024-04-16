@@ -128,10 +128,40 @@ main{
 .btn{
     width: 50%;
     padding: 10% 50%;
-    font-size: clamp(10, 4vw,0.4rem) ;
+    font-size: clamp(10px, 4vw,0.4rem) ;
     color: #fff;
     background-color: #222;
     border-radius: 5%;
     box-shadow: -1px 2px 0 #444;
     
+}
+
+@media(max-width: 600px){
+    .btn{
+        font-size: 7px;
+        width: 10%;
+    }
+    .pokemon_weights{
+        font-size: 8px;
+    }
+    .pokemon_heights{
+        font-size: 8px;
+    }
+    .data_types{
+        font-size: 10px;
+        gap: 40px;
+    }
+    .pokemon_types{
+        font-size: 8px;
+    }    
+    .pokemon_names{
+        font-size: 10px;
+    }
+
+   .btn{
+  
+    padding: 5% 30%;
+   }
+
+  
 }
