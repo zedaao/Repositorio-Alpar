@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Bank</title>
 </head>
 <body>
     
 
     <div class="wrapper">
-        <div>
-            <h1>Seu saldo:<span class="saldo"></span></h1>
+
+        <div class="tela">
+            <div>
+                <span>9:41</span>
+                <span></span>
+            </div>
+
+            <div>
+                <h1>saldo disponível</h1>
+                <span class="saldo"></span>
+            </div >
+
+
+    
+            <div class="content">
+                <input type="number" class="input_bank" placeholder="Digite um valor...">
+
+                <div class="btns">
+                    <button class="submit">Depositar</button>
+                    <button class="sacar">Sacar</button>
+             
+                </div>
+                <div>
+                    <h1>Transações</h1>
+                </div>
+            </div>
+          
         </div>
-
-
-      
-            <input type="number" class="input_bank">
-            <button class="submit">Depositar</button>
-            <button class="sacar">Sacar</button>
-     
+        
+           
     </div>
 </body>
 <script src="./js/banco.js"></script>

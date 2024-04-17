@@ -1,0 +1,84 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+   
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5) ;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 350px;
+    display: grid;
+    
+}
+
+.input_bank{
+   
+   border: none;
+   padding-bottom: 10px;
+   border-bottom:2px solid rgba(0, 0, 0, 0.1);
+   margin-top: 30px;
+   display: inline-block;
+   width: 100%;
+}
+
+.input_bank:focus{
+    stroke: none;
+    outline: none;
+}
+
+.saldo{
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    
+}
+
+.content{
+    
+    margin: 0 auto;
+  
+}
+
+
+.tela{
+    
+    width: 270px;
+    height: 600px;
+    border: 12px solid #000;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: 120px 120px;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.btns button{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    height:120px;
+    background: rgb(195,34,164);
+    background: linear-gradient(176deg, rgba(195,34,164,1) 0%, rgba(45,64,253,0.8181359970674487) 100%);
+    transition: linear 0.2s;
+
+}
+
+button:hover{
+    background: linear-gradient(176deg, rgba(200,50,200,1) 0%, rgba(45,64,253,0.8181359970674487) 100%);
+}

@@ -4,6 +4,7 @@ const btn2 = document.querySelector(".sacar");
 const input = document.querySelector(".input_bank");
 
 const bank = new Bank();
+saldo.innerHTML = formataDinheiro(bank.getsaldo());
 
 btn2.addEventListener("click", () => {
   const valor = Number(input.value);
