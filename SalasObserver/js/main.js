@@ -3,14 +3,50 @@ const btnQuarto = document.querySelector(".btn-quarto");
 const btnCozinha = document.querySelector(".btn-cozinha");
 const btnBanheiro = document.querySelector(".btn-banheiro");
 
-const comodos = document.querySelectorAll(".luz");
+btnSala.addEventListener("click", () => {
+  Iluminacao.instance.toggle("sala");
+});
 
-Iluminacao.instance.registraObserver(Iluminacao.instance.addAtivo);
+btnQuarto.addEventListener("click", () => {
+  Iluminacao.instance.toggle("quarto");
+});
 
-btnSala.addEventListener("click", Iluminacao.instance.addAtivo);
+btnCozinha.addEventListener("click", () => {
+  Iluminacao.instance.toggle("cozinha");
+});
 
-btnQuarto.addEventListener("click", Iluminacao.instance.addAtivo);
+btnBanheiro.addEventListener("click", () => {
+  Iluminacao.instance.toggle("banheiro");
+});
 
-btnCozinha.addEventListener("click", Iluminacao.instance.addAtivo);
+Iluminacao.instance.registraObserver(() => {
+  if (Iluminacao.instance.getState("sala")) {
+    btnSala.parentNode.classList.add("ativo");
+  } else {
+    btnSala.parentNode.classList.remove("ativo");
+  }
+});
 
-btnBanheiro.addEventListener("click", Iluminacao.instance.addAtivo);
+Iluminacao.instance.registraObserver(() => {
+  if (Iluminacao.instance.getState("quarto")) {
+    btnQuarto.parentNode.classList.add("ativo");
+  } else {
+    btnQuarto.parentNode.classList.remove("ativo");
+  }
+});
+
+Iluminacao.instance.registraObserver(() => {
+  if (Iluminacao.instance.getState("cozinha")) {
+    btnCozinha.parentNode.classList.add("ativo");
+  } else {
+    btnCozinha.parentNode.classList.remove("ativo");
+  }
+});
+
+Iluminacao.instance.registraObserver(() => {
+  if (Iluminacao.instance.getState("banheiro")) {
+    btnBanheiro.parentNode.classList.add("ativo");
+  } else {
+    btnBanheiro.parentNode.classList.remove("ativo");
+  }
+});

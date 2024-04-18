@@ -1,35 +1,50 @@
 class Iluminacao {
   static instance;
   observers = [];
+  sala = false;
+  quarto = false;
+  cozinha = false;
+  banheiro = false;
 
-  constructor() {
-    if (Iluminacao.instance) {
-      return Iluminacao.instance;
+  toggle(comodo) {
+    if (comodo == "sala") {
+      this.sala = !this.sala;
     }
-    Iluminacao.instance = this;
+    if (comodo == "quarto") {
+      this.quarto = !this.quarto;
+    }
+    if (comodo == "cozinha") {
+      this.cozinha = !this.cozinha;
+    }
+    if (comodo == "banheiro") {
+      this.banheiro = !this.banheiro;
+    }
+    this.executaObservers();
   }
-  addAtivo = (event) => {
-    if (event) {
-      event.target.parentNode.classList.toggle("ativo");
-      this.executaObservers();
+
+  getState(comodo) {
+    if (comodo == "sala") {
+      return this.sala;
     }
-  };
+    if (comodo == "quarto") {
+      return this.quarto;
+    }
+    if (comodo == "cozinha") {
+      return this.cozinha;
+    }
+    if (comodo == "banheiro") {
+      return this.banheiro;
+    }
+  }
 
   registraObserver(obeserver) {
     this.observers.push(obeserver);
   }
 
-  removerObserver(observer) {
-    const index = this.observers.findIndex((func) => func == observer);
-    if (index >= 0) {
-      this.observers.splice(index, 1);
-    }
-  }
-
   executaObservers() {
-    for (let observer of this.observers) {
-      observer();
-    }
+    this.observers.forEach((func) => {
+      func();
+    });
   }
 }
 
