@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Clima Tempo</title>
+</head>
+<body>
+    <main>
+        <div class="model">
+            
+            <h1 id="city"></h1>
+            <div>
+                <span>21 Abril de 2024</span>
+                <span>15:30</span>
+            </div>
+
+            <div class="tempo-main">
+                <div class="grid-main">
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="icon">
+                    <h1 id="tempo"></h1>
+    
+                </div>
+                <div class="grid-main">
+                    <span id="info"></span>
+                    <p> 16 / 5</p>
+                </div>
+            </div>
+
+            <ul class="bolhas">
+                <li>
+                    Umidade
+                    <span id="umidade"></span>
+                </li>
+                <li>
+                    Vento
+                    <span id="vento"></span>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+<script src="./js/WheatherService.js"></script>
+<script src="./js/ModelWheather.js"></script>
+<script src="./js/ViewWheather.js"></script>
+<script src="./js/ControllerWheather.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

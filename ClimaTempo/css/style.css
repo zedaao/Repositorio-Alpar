@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    list-style: none;
+}
+
+.model{
+    margin: 0 auto;
+    max-width: 320px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #151d2a;
+}
+
+.grid-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bolhas{
+    margin-top: 50px;
+}
