@@ -6,7 +6,9 @@ class ViewWheather {
   }
 
   async climaChange() {
-    dataWheather.innerHTML = await this.data.getTempo();
+    const data = await this.data.getTempo();
+
+    dataWheather.innerHTML = ` ${Math.round(data)} º`;
   }
 
   async description() {
@@ -23,6 +25,17 @@ class ViewWheather {
     );
   }
 
+  async changeMax() {
+    const data = await this.data.getmaxTempo();
+    maxWheather.innerText = `${Math.round(data)} º`;
+  }
+
+  async changeMin() {
+    const data = await this.data.getmin();
+    minWheather.innerText = `${Math.floor(data)} º`;
+    console.log(data);
+  }
+
   async changeCity() {
     const data = await this.data.getName();
     nameWheather.innerText = data;
@@ -35,6 +48,6 @@ class ViewWheather {
 
   async umidadeChange() {
     const data = await this.data.getUmidade();
-    umidadeWheather.innerText = `${data} %`;
+    umidadeWheather.innerText = `${data}%`;
   }
 }

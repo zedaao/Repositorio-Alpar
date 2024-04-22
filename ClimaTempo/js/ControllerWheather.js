@@ -43,5 +43,17 @@ class ControllerWheather {
       this.view.umidadeChange();
     }
   }
+
+  showMax() {
+    if (this.data.getmaxTempo()) {
+      this.view.changeMax();
+    }
+  }
+
+  showMin() {
+    if (this.data.getmin()) {
+      this.view.changeMin();
+    }
+  }
 }
 ControllerWheather.instance = new ControllerWheather();

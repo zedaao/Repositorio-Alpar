@@ -5,10 +5,6 @@ class ModelWheather {
     this.data = new WheatherService();
   }
 
-  getData(cidadede) {
-    return cidadede;
-  }
-
   async getName() {
     const weatherData = await this.data.getWheather();
     return weatherData.name;
@@ -19,10 +15,11 @@ class ModelWheather {
     return weatherData.main.temp;
   }
 
-  async getminTempo() {
+  async getmin() {
     const weatherData = await this.data.getWheather();
     return weatherData.main.temp_min;
   }
+
   async getmaxTempo() {
     const weatherData = await this.data.getWheather();
     return weatherData.main.temp_max;
